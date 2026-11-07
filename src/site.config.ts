@@ -88,6 +88,10 @@ export interface SiteConfig {
   };
 }
 
+import heroImg from './assets/images/hero_apertura_puerta_1794068686355.jpg';
+import carKeysImg from './assets/images/llave_chip_control_1794068687209.jpg';
+import keyDuplicationImg from './assets/images/maquina_duplicadora_llaves_1794068686599.jpg';
+
 export const siteConfig: SiteConfig = {
   businessName: "Cerrajería GL",
   tagline: "Aperturas, llaves con chip y controles",
@@ -106,9 +110,9 @@ export const siteConfig: SiteConfig = {
   googleMapsEmbedUrl: "https://maps.google.com/maps?q=Tamaulipas%201379,%20Col.%20Mezquit%C3%A1n,%20Guadalajara,%20Jalisco&t=&z=16&ie=UTF8&iwloc=&output=embed",
 
   images: {
-    hero: "/src/assets/images/hero_apertura_puerta_1794068686355.jpg",
-    carKeys: "/src/assets/images/llave_chip_control_1794068687209.jpg",
-    keyDuplication: "/src/assets/images/maquina_duplicadora_llaves_1794068686599.jpg",
+    hero: heroImg,
+    carKeys: carKeysImg,
+    keyDuplication: keyDuplicationImg,
   },
 
   pending: {

@@ -142,7 +142,14 @@ export const Hero: React.FC = () => {
                   fetchpriority="high"
                   loading="eager"
                   referrerPolicy="no-referrer"
-                  onError={() => setImgError(true)}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.endsWith('/images/hero_apertura_puerta.jpg')) {
+                      target.src = '/images/hero_apertura_puerta.jpg';
+                    } else {
+                      setImgError(true);
+                    }
+                  }}
                   className="w-full h-full object-cover object-center"
                 />
               ) : (

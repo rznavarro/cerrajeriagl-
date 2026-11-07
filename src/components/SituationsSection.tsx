@@ -124,7 +124,14 @@ export const SituationsSection: React.FC = () => {
                         alt="Máquina duplicando una llave de latón"
                         loading="lazy"
                         referrerPolicy="no-referrer"
-                        onError={() => setImgDuplicadoError(true)}
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (!target.src.endsWith('/images/maquina_duplicadora_llaves.jpg')) {
+                            target.src = '/images/maquina_duplicadora_llaves.jpg';
+                          } else {
+                            setImgDuplicadoError(true);
+                          }
+                        }}
                         className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-300"
                       />
                     ) : (

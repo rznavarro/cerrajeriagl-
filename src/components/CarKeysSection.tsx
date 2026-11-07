@@ -33,7 +33,14 @@ export const CarKeysSection: React.FC = () => {
                   alt="Llave de auto con chip y control remoto sobre mesa de trabajo"
                   loading="lazy"
                   referrerPolicy="no-referrer"
-                  onError={() => setImgError(true)}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.endsWith('/images/llave_chip_control.jpg')) {
+                      target.src = '/images/llave_chip_control.jpg';
+                    } else {
+                      setImgError(true);
+                    }
+                  }}
                   className="w-full h-full object-cover object-center"
                 />
               ) : (
