@@ -1,0 +1,8 @@
+{
+  "name": "Cerrajería GL - Guadalajara",
+  "description": "Cerrajero en Guadalajara: aperturas urgentes de casa y auto, llaves con chip, controles y duplicados en Col. Mezquitán.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

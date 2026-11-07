@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Archivo', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-grafito: #16191D;
+  --color-acero: #2B3138;
+  --color-blanco-hueso: #F6F4EF;
+  --color-laton: #E0A526;
+  --color-laton-hover: #C9931F;
+  --color-texto-gris: #4A525C;
+  --color-whatsapp: #1F9D55;
+  --color-whatsapp-hover: #188647;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F6F4EF;
+    color: #16191D;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Archivo', system-ui, sans-serif;
+  }
+}
+
+/* Safe area padding for mobile bottom bar */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
